@@ -1,0 +1,94 @@
+<!--Developed, with love, by Bogdan Alucai-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CEVA Centru</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="site-container">
+        <div class="navbar" id="navbar">
+            <div id="navbar-left"><a href="index.html">CEVA Centru</a></div>
+            <div id="navbar-center"><a href="#despre">despre</a> - <a href="#reactiv">REACTIV</a> - <a href="#sare">SARe</a> - <a href="#contact">contact</a></div>
+            <div id="navbar-right"><a href="index.html">RO</a> - <a href="index-en.html">EN</a></div>
+        </div>
+
+        <div class="navbar-mobile" id="navbar-mobile">
+            <div class="navbar-left"><a href="index.html">CEVA Centru</a></div>
+            <nav>
+                <input type="checkbox" id="check" hidden onclick="changeBox()">
+                <label for="check" class="chackbtn">
+                    <i class="fa fa-reorder" style="font-size: 18pt;" id="glyph"></i>
+                </label>
+                <div class="nav-mobile">
+                    <span class="fade"><br> <a href="#despre">despre</a> <br></span>
+                    <span class="fade"><a href="#reactiv">REACTIV</a> <br></span>
+                    <span class="fade"><a href="#sare">SARe</a> <br></span>
+                    <span class="fade"><a href="#contact">contact</a> <br></span>
+                    <span class="fade"><a href="index.html">RO</a></span><span class="fade"> - </span><span class="fade"><a href="index-en.html">EN</a></span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="continut">
+            <div class="landing">
+                <div class="container">
+                    <p>comunitate</p><br>
+                    <p>educație</p><br>
+                    <p>viitor</p><br>
+                    <p>artă</p>
+                </div>
+            </div>
+
+            <div class="about" id="despre">
+                <h1>despre noi !</h1>
+                <p>Centrul educațional de arte performative CEVA este un colectiv de adolescenți din Târgu Neamț care explorează universul cu ajutorul artelor performative.</p>
+            </div>
+
+            <div class="reactiv" id="reactiv">
+                <div class="big-ass-text">
+                    <h1>REACTIV</h1>
+                    <h1>REACTIV</h1>
+                    <h1>REACTIV</h1>
+                </div>
+                <div class="more-info">
+                    <p>Tema ediției de anul acesta este <i><b>"Simbioze"</b></i>, adică ne uităm la legăturile dintre noi, la locul nostru în lumea naturală, la raporturile dintre oameni și alte specii și la cum putem conviețui mai bine, mai sănătos.</p>
+                    <br><a href="/reactiv/reactiv.html" target="_blank">află ceva mai mult</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('scroll', ()=>{
+        const header = document.getElementById('navbar')
+        const headerMob = document.getElementById('navbar-mobile')
+
+        if (window.scrollY > 0 ){
+            header.classList.add('scrolled')
+            headerMob.classList.add('scrolled')
+        } else {
+            header.classList.remove('scrolled');
+            headerMob.classList.remove('scrolled');
+        }
+
+    });
+
+    function changeBox(){
+        const menuCheck = document.getElementById('check')
+        const glyph = document.getElementById('glyph')
+        
+        glyph.toggleClass('fa fa-reorder fa-close');
+    }
+    
+</script>
+</html>

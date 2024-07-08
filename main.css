@@ -93,27 +93,6 @@ nav i:hover{
     transition: 0.1s ease-in-out;
 }
 
-@media only screen and (max-width: 992px) {
-    .navbar{
-        display: none;
-    }
-
-    .navbar-mobile{
-        display: flex;
-        justify-content: space-between;
-        text-align: right;
-    }
-
-    .about h1{
-        font-size: 6vw;
-    }
-    
-    .about p{
-        font-size: 3.5vw;
-        text-align: justify;
-    }
-}
-
 @keyframes fadeIn {
     100% {
       opacity: 1;
@@ -222,16 +201,17 @@ nav i:hover{
 }
 
 .about p{
-    font-size: 16px;
+    font-size: 2vw;
     text-align: justify;
 }
 
 .reactiv{
     background-color: black;
-    height: 50%;
+    height: 100;
     color: white;
     margin: auto;
     display: block;
+    padding-bottom: 80px;
 }
 
 .reactiv h1{
@@ -262,7 +242,7 @@ nav i:hover{
     color: #ffe1a8;
 }
 
-.reactiv h1:nth-child(1)
+.reactiv h1:nth-child(3)
 {
     color: #e26d5c;
 }
@@ -294,8 +274,85 @@ nav i:hover{
 .sare{
     background-color: white;
     height: 70%;
+    text-align: center;
+    margin: auto;
 }
 
 .sare h1{
-    font-size: 5vw;
+    font-size: 4vw;
+}
+
+.container-video{
+    width: 400px;
+    height: 450px;
+    background-color: grey;
+    position: relative;
+    margin: auto;
+    border: 10px solid white;
+}
+
+.episode-desc{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.episode-thumb img{
+    width: 400px;
+}
+
+.episode-thumb i{
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 22%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+.episode-gallery{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.episode-desc h2{
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.episode-desc p{
+    margin-bottom:0px;
+    text-align: justify;
+    padding-right:20px;
+}
+
+.hosts{
+    margin-top:0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar{
+        display: none;
+    }
+
+    .navbar-mobile{
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+    }
+
+    .about h1{
+        font-size: 30pt;
+    }
+    
+    .about p{
+        font-size: 16pt;
+        text-align: justify;
+    }
+
+    .container p{
+        font-size: 80pt;
+    }
 }
